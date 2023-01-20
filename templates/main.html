@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/_assets/theme.css" />
+  <link rel="icon" type="image/x-icon" href="/_assets/favicon.svg" />
+  <title>Template</title>
+</head>
+
+<body>
+  <form action="/_assets/new" method="POST">
+    <div class="listing">
+      <div class="header-source">Source</div>
+      <div class="header-dest">Dest</div>
+      <div> </div>
+
+      {% for link in links %}
+
+      <div class="listing-source">
+        {{ link.src }}
+      </div>
+      <div class="listing-dest">
+        <a class="link" href="{{ link.dst }}">{{ link.dst }}</a>
+      </div>
+      <div class="listing-delete">
+        <a class="link" href="/_assets/del?src={{link.src}}&dst={{link.dst}}">🗑️</a>
+      </div>
+
+      <hr />
+      {% endfor %}
+
+      <div class="listing-source">
+        <input name="src" type="text">
+      </div>
+      <div class="listing-dest">
+        <input name="dst" type="text">
+        <input type="submit" style="display: none" />
+      </div>
+      <div> </div>
+    </div>
+  </form>
+</body>
+
+</html>

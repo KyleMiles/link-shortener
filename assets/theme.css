@@ -1,0 +1,55 @@
+html {
+  min-width: 400px;
+  margin: 0;
+  padding: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  color: #666666;
+  background-color: #212121;
+
+  text-align: center;
+  font-size: 28px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+hr {
+  grid-auto-rows: unset;
+  grid-column: span 3;
+  margin: 0;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  height: 2px;
+  border: none;
+  background-color: #666666;
+}
+
+.listing {
+  display: grid;
+  gap: 0;
+  grid-template-columns: auto auto 25px;
+  text-align: right;
+}
+
+.header-source {
+  font-size: 18px;
+}
+
+.header-dest {
+  text-align: left;
+  font-size: 18px;
+  margin-left: 25px;
+}
+
+.listing-dest {
+  text-align: left;
+  margin-left: 25px;
+}
+
+.link {
+  color: #666666;
+}
